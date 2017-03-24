@@ -1,8 +1,8 @@
 package main
 
 import (
-"encoding/json"
-"net/http"
+	"encoding/json"
+	"net/http"
 )
 
 type Person struct {
