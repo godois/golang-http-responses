@@ -1,9 +1,8 @@
-package html
+package main
 
 import (
 	"html/template"
 	"net/http"
-	"path"
 )
 
 type Profile struct {
@@ -17,9 +16,9 @@ func main() {
 }
 
 func foo(w http.ResponseWriter, r *http.Request) {
-	profile := Profile{"Alex", []string{"snowboarding", "programming"}}
+	profile := Profile{"Marcio!!", []string{"programming", "gamming"}}
 
-	fp := path.Join("templates", "index.html")
+	fp := "index.html"
 	tmpl, err := template.ParseFiles(fp)
 	if err != nil {
 		http.Error(w, err.Error(), http.StatusInternalServerError)
