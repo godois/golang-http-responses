@@ -16,7 +16,7 @@ func main() {
 }
 
 func foo(w http.ResponseWriter, r *http.Request) {
-	profile := Person{"Alex", []string{"snowboarding", "programming"}}
+	profile := Person{"Marcio Godoi", []string{"programming", "gamming"}}
 
 	js, err := json.Marshal(profile)
 	if err != nil {

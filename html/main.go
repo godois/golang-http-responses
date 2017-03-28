@@ -16,7 +16,7 @@ func main() {
 }
 
 func foo(w http.ResponseWriter, r *http.Request) {
-	profile := Profile{"Marcio!!", []string{"programming", "gamming"}}
+	profile := Profile{"Marcio Godoi", []string{"programming", "gamming"}}
 
 	fp := "index.html"
 	tmpl, err := template.ParseFiles(fp)

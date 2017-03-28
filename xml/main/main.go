@@ -17,7 +17,7 @@ func main() {
 
 func responseBuffer(w http.ResponseWriter, r *http.Request) {
 
-	profile := Profile{"Godois", []string{"cooking", "programming"}}
+	profile := Profile{"Marcio Godoi", []string{"cooking", "programming"}}
 
 	x, err := xml.MarshalIndent(profile, "", "  ")
 	if err != nil {
