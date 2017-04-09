@@ -16,10 +16,12 @@ func main() {
 }
 
 func foo(w http.ResponseWriter, r *http.Request) {
+
 	profile := Profile{"Marcio Godoi", []string{"programming", "gamming"}}
 
 	fp := "index.html"
 	tmpl, err := template.ParseFiles(fp)
+
 	if err != nil {
 		http.Error(w, err.Error(), http.StatusInternalServerError)
 		return
